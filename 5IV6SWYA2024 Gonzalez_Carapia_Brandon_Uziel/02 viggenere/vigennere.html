@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cifrado Vigenere</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<body>
+    <h1>Cifrado Vigenere</h1>
+
+    <div class="container">
+        <div class="center-block">
+            <div class="datos">
+                <p><h3>Texto a Cifrar</h3></p>
+                <br>
+                <p><input type="text" id="txt"></p>
+                <br>
+                <p>
+                    <input type="button" class="btn btn-info" value="Cifrar" onclick="longitudCifrar()">
+                    <input type="button" class="btn btn-info" value="Descifrar" onclick="longitudDescifrar()">
+                    <input type="button" class="btn btn-info" value="Reiniciar" onclick="reiniciar()">
+                </p>
+                <br>
+                <p><h3>Ingrese la clave secreta: </h3></p>
+                <br>
+                <p><input type="text" name="posicionamiento" id="txtClave" onpaste="return false;" ondrop="return false"></p>
+                <br>
+                <p><h3>Ingrese el texto que desea cifrar</h3></p>
+                <br>
+                <textarea id="res" onpaste="return false;" ondrop="return false"></textarea>
+                <br>
+                <p><input type="button" class="btn btn-info" value="Copiar" onclick="colocar()"></p>
+            </div>
+        </div>
+    </div>
+    <script src="./js/viggenere.js"></script>
+</body>
+</html>
